@@ -7,6 +7,11 @@
     - runned generateAvroJava gradle script
     - application builds without errors 
 
-- checkoutRequest created
-    - created data class checkoutRequest
+- CheckoutRequest created
+    - created data class CheckoutRequest
+
+- CheckoutCreatedSource created
+    - created streaming interface CheckoutCreatedSource
+
+
 

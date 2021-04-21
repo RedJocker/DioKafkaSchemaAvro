@@ -1,0 +1,12 @@
+{
+    "type": "record",
+    "name": "CheckoutCreatedEvent",
+    "namespace": "org.diotutorial.ecommerce.checkout.event",
+    "fields": [
+        {
+            "name": "checkoutCode",
+            "type": ["string", "null"]
+        }
+    ]
+
+}

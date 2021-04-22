@@ -40,5 +40,22 @@
     - added schema-registry
     - added cloud config in application.yml
 <br>
-    
+
+ - created CheckoutResource
+    - 2 endpoints implemented
+        -  createFromForm, consumes application/x-www-form-urlencoded
+            - receiving the requests but not being able to get the values from the form
+        - createFromJson, consumes aplication/json
+            - working as expected
+    - application runs and receives requests on the endpoints implemented
+    - todo: 
+        - fix createFromForm
+
+- fix createFromForm
+    - problem was mainly on front-end missing atributte name on form parameters
+        - fixed tutors front-end
+    - included frontend in projects folder
+        - besides the fix it was all writen by tutor
+    - fixed checkoutEntity
+        - typo and missing atribute 
 

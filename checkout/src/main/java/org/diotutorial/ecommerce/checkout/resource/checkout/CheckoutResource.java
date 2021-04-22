@@ -31,15 +31,15 @@ public class CheckoutResource {
 
     @PostMapping(value = "/", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
     public ResponseEntity<Void> createFromForm(CheckoutRequest checkoutRequest) {
-        log.info("--CheckoutResource: createFromForm requested " + LocalTime.now().toString());
+        log.info("createFromForm requested " + LocalTime.now().toString());
         log.info(checkoutRequest.toString());
-        checkoutService.create(checkoutRequest);
+//        checkoutService.create(checkoutRequest);
         return ResponseEntity.ok().build();
     }
 
     @PostMapping(value = "/", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> createFromJson(@RequestBody CheckoutRequest checkoutRequest) {
-        log.info("--CheckoutResource: createFromJson requested " + LocalTime.now().toString());
+        log.info("createFromJson requested " + LocalTime.now().toString());
         log.info(checkoutRequest.toString());
         checkoutService.create(checkoutRequest);
         return ResponseEntity.ok().build();

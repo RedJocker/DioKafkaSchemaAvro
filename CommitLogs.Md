@@ -17,6 +17,12 @@
     - created class for configuration of stream
         - makes @Bean of CheckoutCreatedSource
 
-
+- CheckoutEntity created with service and repository
+    - added jpa and postgress dependencies
+    - included database configuration on application.yml
+    - created CheckoutEntity
+    - created CheckoutRepository
+    - created CheckoutService interface
+    - created CheckoutServiceImpl 
 
 

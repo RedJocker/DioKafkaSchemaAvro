@@ -50,6 +50,7 @@
     - application runs and receives requests on the endpoints implemented
     - todo: 
         - fix createFromForm
+<br>
 
 - fix createFromForm
     - problem was mainly on front-end missing atributte name on form parameters
@@ -58,4 +59,13 @@
         - besides the fix it was all writen by tutor
     - fixed checkoutEntity
         - typo and missing atribute 
+<br>
+
+- improved response on both endpoints
+    - createFromForm
+        - redirects to a page with the code as a String
+    - createFromJson
+        - receives a { "code": "dfsafasfa"}
+            - used map instead of a pojo
+
 

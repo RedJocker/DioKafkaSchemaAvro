@@ -3,9 +3,13 @@ package org.diotutorial.ecommerce.checkout.entity;
 import lombok.Builder;
 import lombok.Data;
 
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
 
 @Builder
 @Data
@@ -13,6 +17,7 @@ import javax.persistence.Id;
 public class CheckoutEntity {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @Column

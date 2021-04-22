@@ -13,5 +13,10 @@
 - CheckoutCreatedSource created
     - created streaming interface CheckoutCreatedSource
 
+- StreamingConfig created
+    - created class for configuration of stream
+        - makes @Bean of CheckoutCreatedSource
+
+
 
 

@@ -67,5 +67,17 @@
     - createFromJson
         - receives a { "code": "dfsafasfa"}
             - used map instead of a pojo
+<br>
+
+- produce a kafka message
+    - had a hard-time with serialization issues
+        - for some reason the application.yml was not being able to set the serializer to KafkaAvroSerializer and Jackson kept crashing during serialization with "not an array" message
+        - found a solution by doing a more manual aproach to sending the message
+            - not the best solution, ideally would like to be able to make proper configuration and make use of abstractions provided by the framework, or at least organize a little better the solution that is currently implemented
+        - this bug took a whole day and I still want to deliver this and two other projetcs by the end of the week to conclude the bootcamp, today is thursday already
+    - message produced
+        - checked by entering kafka container and running a console consumer
+<br>
+
 
 

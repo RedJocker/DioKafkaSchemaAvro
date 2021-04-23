@@ -35,13 +35,16 @@ cloud:
         destination: streaming.ecommerce.checkout.created
         contentType: application/*+avro
         producer:
-          use-native-encoding: false
+          use-native-encoding: true
+        consumer:
+          group: streaming.ecommerce.checkout.created.consumer
+          use-native-decoding: true
       payment-paid-input:
         destination: streaming.ecommerce.payment.paid
         contentType: application/*+avro
         group: ${spring.application.name}
         consumer:
-          use-native-decoding: false
+          use-native-decoding: true
   kafka:
     properties:
       schema:

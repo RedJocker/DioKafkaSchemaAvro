@@ -77,7 +77,14 @@
         - this bug took a whole day and I still want to deliver this and two other projetcs by the end of the week to conclude the bootcamp, today is thursday already
     - message produced
         - checked by entering kafka container and running a console consumer
+        - kafka-console-consumer --from-beginning --topic checkout-created-output --bootstrap-server localhost:9092
 <br>
+
+- listening to topic from kafka
+    - Here the tutor tries to implement a processor in a new application, but is not well succeeded due to serialization errors
+    - Then I instead choosed to just implement a functioning listener on the same application
+    - Again this wasn't the best possible implementation, but it does write a topic when provoked either by the front-end or by post and also listen to this topic and deserializes it to a pojoDao
+    - this will be it for this project at least for now. 
 
 
 
